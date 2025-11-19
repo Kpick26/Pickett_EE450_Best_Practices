@@ -1,0 +1,107 @@
+\documentclass[9pt, technote]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{url}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Code Management and Generative AI Best Practices\\
+    \large A Collaborative Review\\
+    \large EE450 Military Robotic Applications
+
+}
+
+% When you contribute to this document, add an \author section for yourself
+\author{\IEEEauthorblockN{Cadet 1}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+First.Last@westpoint.edu}\\
+\and
+\IEEEauthorblockN{Cadet 2}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+First.Last@westpoint.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+This is a collection of best-practice proposals by the cadets of EE450 Military Robotic Applications.
+The cadets use this document to share their perspectives, experiences, and recommendations on the use
+of software IDEs (specifically, Visual Studio Code and the Arduino IDE), robotics project code structure,
+and the use of generative artificial intelligence in completing robotics projects. This is a
+"by-cadets-for-cadets" living record that both encourages reflection and guides future cadets in their
+robotics endeavors.
+\end{abstract}
+\section{Instructions to Contributors}
+This document is divided into four parts:
+\begin{enumerate}
+    \item Getting Started with Arduino Programming
+    \item Code Management and Structure
+    \item Integrating Generative AI
+    \item Testimonials and Examples
+\end{enumerate}
+
+You may contribute to any or all of these sections as much or as little as you like. It is critical that
+your contributions remain \textit{high quality} and \textit{easy to understand}. Do your best to place
+your inputs in the correct sections and subsections, but feel free to create your own sections or subsections
+if you think you need to. You must not, under any circumstances, provide direct answers to any of the course
+projects, mini-projects, quizzes, or other assignments --- the purpose is to guide other cadets on their
+own problem-solving, not to solve the problem for them.
+
+Contributions to this document must be made via a \textit{pull request} to the appropriate GitHub repository.
+This first requires you to \textit{fork} the project repository into a new \textit{branch}. If you need
+guidance on how GitHub works, or how to submit a pull request, you can check the provided references.\cite{github_branch} \cite{github_pull}
+\section{Getting Started with Arduino Programming}
+% Use this section to discuss how to set up the IDE, how to install libraries, and how to upload code to the Arduino microcontroller.
+% Any generic guidance not specific to one IDE can go here, before the subsections.
+\subsection{Visual Studio Code}
+
+\subsection{Arduino IDE}
+
+\section{Code Management and Structure}
+% Below are a few recommended subsections for you to contribute to, but feel free to create your own if you think it is appropriate.
+\subsection{Incorporating the Sense-Decide-Act Paradigm} 
+% Did you structure your programs this way? Was it successful or not?
+
+\subsection{Implementing States and Using State Diagrams} 
+% Are state diagrams helpful at the start of a project? How did you use them?
+
+\subsection{File Structure and Version Management --- Avoid Drowning in Code} 
+% Arduino sketches can grow into large, complex files. How did you organize them internally so you are always confident
+% that your program is doing what you want?
+
+\section{Integrating Generative AI}
+
+\subsection{Registering for Copilot Pro} 
+% provide instructions for registering for Copilot Pro using a student license
+
+\subsection{Managing and Integrating Generated Code} 
+% give guidance on how to prompt Copilot -- how do you structure the prompt, what context do you give it, and what do you
+% do with what it generates?
+
+\subsection{Documentation and Citation of Generated Code} 
+% How do you document and cite generated code? How do you avoid plagiarism and ensure all generated code is clearly marked?
+
+\section{Testimonials and Examples}
+Feel free to add any other guidance, examples (good or bad!), or advice to other cadets here.
+
+\subsection{Advice from CDT X} % example
+If I had to give one piece of advice, it's to research the sensors I'm using and understand how they work, \textit{then}
+build my state diagram and think about what I actually want the robot to do in terms of sensors and actuators, \textit{then}
+think about how I want to prompt the generative AI. Starting by inputting the problem statement into Copilot never worked
+for me a single time --- it always gave me something I didn't understand and had no idea how to fix, causing problems later.
+
+\bibliographystyle{plain}
+\bibliography{References}
+
+
+\end{document}
