@@ -25,10 +25,10 @@
 West Point, NY \\
 First.Last@westpoint.edu}\\
 \and
-\IEEEauthorblockN{Cadet 2}\\
+\IEEEauthorblockN{Cadet Amani Haskins}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
-First.Last@westpoint.edu}
+amani.haskins@westpoint.edu}
 }
 \IEEEauthorblockN{Cadet Taylor Brown}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
@@ -225,11 +225,17 @@ have to backtrack, sometimes all the way back to the beginning. Having a clear p
 a lot of time and evergy in the long run, and it will help you to understand what each component of your robot is 
 doing, as well as how it is contributing to your entire system. I think that is pretty cool! 
 
-\subsection{Advice from CDT X} % example
-If I had to give one piece of advice, it's to research the sensors I'm using and understand how they work, \textit{then}
-build my state diagram and think about what I actually want the robot to do in terms of sensors and actuators, \textit{then}
-think about how I want to prompt the generative AI. Starting by inputting the problem statement into Copilot never worked
-for me a single time --- it always gave me something I didn't understand and had no idea how to fix, causing problems later.
+\subsection{Advice from Amani Haskins} % example
+I have found that Arduino IDE and the libraries we import throughout this class have many tester files. I reccomend that when you
+download a new library, you open "File" and then "Examples" to see the files that are included with the library. I would have saved myself
+a lot of time if I had used these exampled files earlier in the course. The examples will give you a basic set up for servo controlled
+robot like the Traxxas and Boebot. They will also demonstrate a basic set up for the Pixycam and other sensors that are commonly used.
+In my experience, when you are testing code, it also helps to copy and paste the function or section of code you are working on into a different 
+file in Arduino IDE or in a testcode file. I have found that sometimes problems are easier to debugg when you isolate the function/ state that
+the problem is occuring in. Lastly, I highly highly recommend using serial prints throughout your code to debugg, especially when you are using
+multiple states. While states are not hard to build and test on their own, they are hard to track if you do not have an easy mechanism for it.
+For example, when you integrate a state, just simply write "serial.print(in state x") or use an LED and write "digitalWrite(LED_X, HIGH") so you can
+keep track of your states during integration.
 
 \bibliographystyle{plain}
 \bibliography{References}
