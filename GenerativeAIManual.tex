@@ -125,7 +125,15 @@ Sometimes during the class you will come across a library that is not included i
 \section{Code Management and Structure}
 % Below are a few recommended subsections for you to contribute to, but feel free to create your own if you think it is appropriate.
 \subsection{Incorporating the Sense-Decide-Act Paradigm} 
-% Did you structure your programs this way? Was it successful or not?
+The Sense-Decide-Act Paradigm (SDA) is the most important framework to understand and apply for coding in this class.
+At the start of each project, start with a simple outline of the SDA framework. Typically, I would sugguest looking at your block
+diagram and state diagram to identify what sensors your are using- this is how you know what you are "sensing". Your states from your
+state diagram will indicate your "decide" criteria. To finish this, you must look at what must occur to move your robot from one state to
+another. For example, if you are using a PING distance sensor to detect and fire at a target, the distance is within your "sense" section and 
+choosing to fire at the target is your "decide" criteria (i.e if object is within x distance of the bot).Lastly , the "act" section is what your
+robot does within the state. For example, if the bot senses and then decides to fire, the action is the mechanism that you are firing with. This could be 
+as simple as turning on a buzzer or illuminating an LED or even setting a laser pin high.Ultimately, SDA keeps your code organized and helps you identify
+what you need to code in each function. 
 
 \subsection{Implementing States and Using State Diagrams} 
 % Are state diagrams helpful at the start of a project? How did you use them?
